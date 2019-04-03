@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Seamless IFrame Test</title>
+</head>
+<body>
+    <iframe id="myIframe" src="http://anotherdomain.com/iframe.html"></iframe>
+    <script src="js/seamless/seamless.parent.min.js"></script>
+    <!-- <script src="js/seamless/seamless.child.min.js"></script> -->
+    <script>
+        window.onload = function() {
+            // Turns the iframe into a seamless iframe.
+            window.seamless(document.getElementById('myIframe'));
+        };
+    </script>
+</body>
+</html>
